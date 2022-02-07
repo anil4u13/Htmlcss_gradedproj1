@@ -1,0 +1,162 @@
+<! DOCTYPE html>
+<html>
+<head>
+	<title>Pharmacy</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<header>
+	<h2 class="heading">Pharmacy</h2>
+	<div class="nav">
+		<a href = "#">Home</a>
+		<div class="dropdown">
+			<a href = "#">Our Medicines</a>
+			<div class="dropdown-content">
+				<a href="#">Fever</a>
+				<a href="#">Muscle Pain</a>
+				<a href="#">Cold & Cough</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<a href = "#">Health Care</a>
+			<div class="dropdown-content">
+				<a href="#">Baby Care</a>
+				<a href="#">Skin Care</a>
+				<a href="#">Home Care</a>
+				<a href="#">Personal Care</a>
+				<a href="#">Pet Care</a>
+			</div>
+		</div>
+		<a href = "lab-test.html">Lab Test</a>
+	</div>
+</header>
+<div class="banner">
+<div class="slideshow-container">
+
+	<div class="mySlides fade">
+	  <img src="./Images/Animation/ani1.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="./Images/Animation/ani2.png" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="./Images/Animation/ani3.jpg" style="width:100%">
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="./Images/Animation/ani4.jpg" style="width:100%">
+	</div>
+	<div class="mySlides fade">
+	  <img src="./Images/Animation/ani5.jpg" style="width:100%">
+	</div>
+</div>
+<br>
+
+<div style="text-align:center">
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span>
+	<span class="dot"></span>
+	<span class="dot"></span>  
+</div>
+</div>
+
+<section class="gallery">
+	<h1>Covid Care</h1>
+	<div class="item">
+		<h2>Covid Test kit</h2>
+		<img src="./Images/Products/c1.jpg" class="display-img">
+		<p>Rs.40/-</p>
+		<p>Offer Rs.30/-</p>
+		<input type="submit" value="Add to Cart" class="cartButton">
+	</div>
+	<div class="item">
+		<h2>Covid Essentials</h2>
+		<img src="./Images/Products/c2.jpg" class="display-img">
+		<p>Rs.240/-</p>
+		<p>Offer Rs.170/-</p>
+		<input type="submit" value="Add to Cart" class="cartButton">
+
+	</div>
+	<div class="item">
+		<h2>Sanitizer Bottle</h2>
+		<img src="./Images/Products/c3.jpg" class="display-img">
+		<p>Rs.99/-</p>
+		<p>Offer Rs.87/-</p>
+		<input type="submit" value="Add to Cart" class="cartButton">
+
+	</div>
+	<div class="item">
+		<h2>Mask</h2>
+		<img src="./Images/Products/c4.jpg" class="display-img">
+		<p>Rs.45/-</p>
+		<p>Offer Rs.30/-</p>
+		<input type="submit" value="Add to Cart" class="cartButton">
+	</div>
+</section>
+<section>
+<h1>Diabetes Care</h1>
+
+<div class="item">
+		<h2>BGR-34</h2>
+		<img src="./Images/Products/d1.jpg" class="display-img">
+		<p>Rs.40/-</p>
+		<p>Offer Rs.30/-</p>
+		<input type="submit" value="Add to Cart" class="cartButton">
+	</div>
+	<div class="item">
+		<h2>Chavanprash</h2>
+		<img src="./Images/Products/d2.jpg" class="display-img">
+		<p>Rs.240/-</p>
+		<p>Offer Rs.170/-</p>
+		<input type="submit" value="Add to Cart" class="cartButton">
+
+	</div>
+	<div class="item">
+		<h2>Colgata</h2>
+		<img src="./Images/Products/d3.jpg" class="display-img">
+		<p>Rs.99/-</p>
+		<p>Offer Rs.87/-</p>
+		<input type="submit" value="Add to Cart" class="cartButton">
+
+	</div>
+	<div class="item">
+		<h2>Cookie</h2>
+		<img src="./Images/Products/d4.png" class="display-img">
+		<p>Rs.45/-</p>
+		<p>Offer Rs.30/-</p>
+		<input type="submit" value="Add to Cart" class="cartButton">
+	</div>
+</section>
+<footer class="footer">
+	<p>@copyright. Only for demonstration purposes</p>
+</footer>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
